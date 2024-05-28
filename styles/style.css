@@ -9,4 +9,236 @@
   max-width: 1208px;
   margin: 0 auto;
   padding: 0 16px;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 768px;
+  }
+}
+
+.artical {
+  width: 100%;
+  background-color: #fbf8ec;
+  height: 600px;
+}
+.artical__menu {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  .artical__menu {
+    width: 736px;
+    height: 40px;
+  }
+}
+.artical__title {
+  font-family: Rubik;
+  color: #414141;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+@media screen and (max-width: 1440px) {
+  .artical__title {
+    font-size: 24px;
+  }
+}
+.artical__mail {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #606060;
+  display: flex;
+  align-items: stretch;
+}
+.artical__arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.articals {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .articals {
+    width: 224px;
+    gap: 32px;
+  }
+}
+.articals__man {
+  background-color: #fff;
+  width: 376px;
+  height: 420px;
+}
+@media screen and (max-width: 1440px) {
+  .articals__man {
+    width: 224px;
+  }
+}
+.articals__art {
+  width: 376px;
+  height: 162px;
+}
+@media screen and (max-width: 1440px) {
+  .articals__art {
+    width: 224px;
+    height: 162px;
+  }
+}
+.articals__page {
+  width: 356px;
+  height: 18px;
+  margin: 10px;
+  color: #727272;
+  font-size: 12px;
+}
+@media screen and (max-width: 1440px) {
+  .articals__page {
+    width: 204px;
+    height: 12px;
+    font-size: 8px;
+  }
+}
+.articals__title {
+  color: #414141;
+  width: 356px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .articals__title {
+    width: 204px;
+    height: 72px;
+    font-size: 16px;
+  }
+}
+.articals__description {
+  font-family: Rubik;
+  width: 356px;
+  height: 92px;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 15px;
+  margin: 10px;
+}
+@media screen and (max-width: 1440px) {
+  .articals__description {
+    width: 204px;
+    height: 90px;
+    font-size: 12px;
+  }
+}
+.articals__button {
+  width: 150px;
+  height: 40px;
+  color: #70c05b;
+  border: solid 1px #e5ffde;
+  border-radius: 4px;
+  background-color: #e5ffde;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.articals__button__button:hover {
+  color: #fff;
+  background-color: #70c05b;
+}
+
+footer {
+  background-color: #f9f4e2;
+  background-image: url(../src/images/bg.svg);
+  max-width: 100%;
+  height: 126px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media screen and (max-width: 1440px) {
+  footer {
+    height: 124px;
+  }
+}
+
+.footer__nav {
+  width: 1209px;
+  height: 78px;
+}
+@media screen and (max-width: 1440px) {
+  .footer__nav {
+    width: 736px;
+    height: 56px;
+    margin: 32px 16px 36px;
+  }
+}
+.footer__logo {
+  width: 64px;
+  height: 44px;
+}
+.footer__a {
+  text-decoration: none;
+  color: #414141;
+}
+.footer__menu {
+  display: flex;
+}
+.footer__left {
+  margin-right: 110px;
+  width: 740px;
+  height: 44px;
+}
+.footer__list {
+  list-style: none;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1440px) {
+  .footer__list {
+    width: 415px;
+    height: 44px;
+  }
+}
+.footer__right {
+  width: 336px;
+  height: 24px;
+}
+.footer__web {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__weber {
+  width: 24px;
+  height: 24px;
+}
+.footer__fhone {
+  width: 152px;
+  height: 24px;
+}
+.footer__b {
+  list-style: none;
+  text-decoration: none;
+  color: #414141;
+  font-size: 16px;
+}
+.footer__end {
+  margin-top: 16px;
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  gap: 8px;
+  align-items: center;
+}
+.footer__logo {
+  width: 100px;
+  height: 10px;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
