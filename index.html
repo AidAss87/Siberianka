@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Северяночка</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <header></header>
-    <main></main>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-page-one">
+      <div class="container header">
+        <div class="header__logo">
+          <img
+            src="./src/images/logo.svg"
+            alt="северяочка логотип"
+            class="header__image-logo"
+          />
+        </div>
+        <input type="checkbox" name="" class="header__check" id="checkbox" />
+        <nav class="supernav">
+          <div class="container supernav__wrapper">
+            <ul class="supernav__unlist">
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Молоко, сыр, яйцо</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Хлеб</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Фрукты и овощи</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Замороженные продукты</li></a
+              >
+            </ul>
+            <ul class="supernav__unlist">
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Напитки</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Кондитерские изделия</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Чай, кофе</li></a
+              >
+            </ul>
+            <ul class="supernav__unlist">
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Бакалея</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Здоровое питание</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Зоотовары</li></a
+              >
+            </ul>
+            <ul class="supernav__unlist">
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Непродовольственные товары</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Детское питание</li></a
+              >
+              <a href="" class="supernav__link"
+                ><li class="supernav__list">Мясо, птица, колбаса</li></a
+              >
+            </ul>
+          </div>
+        </nav>
+        <div class="header__catalog">
+          <a href="" class="header__link-catalog">
+            <label for="checkbox" class="header__superlist">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <p class="header__catalog-text">Каталог</p>
+          </a>
+        </div>
+        <div class="header__searching">
+          <input
+            class="header__search-line"
+            type="text"
+            placeholder="Найти товар"
+          />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__unlist">
+            <li class="header__list">
+              <a href="" class="header__link">
+                <img
+                  src="./src/images/shape.svg"
+                  alt="избранное"
+                  class="header__image-nav"
+                />
+                <p class="header__name-nav">Избранное</p>
+              </a>
+            </li>
+            <li class="header__list">
+              <a href="" class="header__link">
+                <img
+                  src="./src/images/search.svg"
+                  alt="заказы"
+                  class="header__image-nav"
+                />
+                <p class="header__name-nav">Заказы</p>
+              </a>
+            </li>
+            <li class="header__list">
+              <a href="" class="header__link">
+                <img
+                  src="./src/images/shopping-cart.svg"
+                  alt="корзина"
+                  class="header__image-nav"
+                />
+                <p class="header__name-nav">Корзина</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <img
+            src="./src/images/avatar.png"
+            alt="фотография пользователя"
+            class="header__image-user"
+          />
+          <p class="header__name-user">Алексей</p>
+        </div>
+        <div class="user-menu">
+          <img class="user-button" src="./src/images/Button.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main__info">
+        <img
+          class="main__ad-image"
+          src="./src/images/img.png"
+          alt="корзина продуктов"
+        />
+        <h1 class="main__main-text">Доставка бесплатно от 1000</h1>
+      </div>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>
