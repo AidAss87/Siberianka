@@ -8,10 +8,8 @@
   width: 100%;
   max-width: 1208px;
   margin: 0 auto;
-  // @media .container {max-width:768px;
-  //   max-width: 768px;
-    
-  // }
+  padding: 0 16px;
+  @media screen and (max-width: 1440px){width: 768px;}
 }
 
 ul{
