@@ -1,0 +1,229 @@
+.header-page-one {
+  padding: 16px 0;
+  z-index: 900;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__image-logo {
+    width: 152px;
+    height: 32px;
+  }
+
+  &__catalog {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__catalog-menu {
+    border-color: white;
+  }
+  &__link-catalog {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #70c05b;
+    border-radius: 5px;
+
+    &:active {
+      background-color: #479b32;
+    }
+  }
+  &__catalog-menu {
+    height: 24px;
+    width: 24px;
+  }
+  &__catalog-text {
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+
+  &__searching {
+    display: flex;
+    align-items: center;
+  }
+  &__search-line {
+    width: 374px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #70c05b;
+    padding: 0 5px 0 10px;
+
+    &:focus {
+      outline: 2px solid #70c05b;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__unlist {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image-nav {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__unlist {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  &__name-nav {
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    color: black;
+    font-size: 14px;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__name-user {
+    font-size: 16px;
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+
+  // Выпадающий каталог
+  &__superlist {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & span {
+      transition: 0.4s;
+      width: 20px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: white;
+      position: absolute;
+      &:first-child {
+        top: 4px;
+      }
+      &:last-child {
+        bottom: 4px;
+      }
+    }
+  }
+
+  &__check {
+    display: none;
+    &:checked {
+      & ~ .header__catalog .header__superlist span {
+        &:first-child {
+          opacity: 0;
+          width: 0;
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+        &:last-child {
+          opacity: 0;
+          width: 0;
+        }
+      }
+      & ~ .supernav {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+.supernav {
+  background-color: white;
+  height: 210px;
+  z-index: -900;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  top: 70px;
+  transition: 0.4s;
+  transform: translateY(-100%);
+  box-shadow: none;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    color: black;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+}
+
+.main {
+  margin-top: 4px;
+  width: 100%;
+  z-index: -999;
+  background-image: url(../src/images/group.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgba(251, 248, 236, 1);
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__main-text {
+    font-size: 48px;
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+}
