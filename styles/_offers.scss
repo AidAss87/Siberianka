@@ -1,32 +1,22 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  max-width: 1208px;
-  margin: 0 auto;
-}
-
 main {
-  background-color: rgb(251, 248, 236);
+  background-color: rgba(251, 248, 236, 1);
 }
 
+section{
+ 
+  
+}
 .offers__cards {
   display: flex;
   justify-content: space-between;
 }
 
 .offers__forest {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   max-width: 206px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px 10px rgba(202, 147, 96, 0.8);
+  box-shadow: 0px 0px 15px 10px rgb(202, 147, 96, 0.8);
   transform: rotate(15deg) scale(1.07, 1.08);
   margin-left: 70px;
   margin-top: 15px;
@@ -36,7 +26,7 @@ main {
   max-width: 584px;
   width: 100%;
   height: 200px;
-  background-color: rgb(252, 213, 186);
+  background-color: rgba(252, 213, 186, 1);
 }
 
 .offers__card {
@@ -72,6 +62,7 @@ p {
 
 .offers__card_second {
   background-image: url(../src/image/banner.svg);
+  // background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -79,8 +70,7 @@ p {
   max-width: 1208px;
   width: 100%;
   max-height: 354px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: 28px;
 }
 
@@ -90,9 +80,7 @@ h2 {
   font-weight: 800;
   color: #414141;
   font-size: 36px;
-}
-@media (max-width: 768px) {
-  h2 {
+  @media (max-width: 768px) {
     font-size: 24px;
   }
 }
@@ -116,4 +104,5 @@ input {
 
 .styled__colored {
   background-color: #70c05b;
-}/*# sourceMappingURL=style.css.map */
+}
+
