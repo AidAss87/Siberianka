@@ -402,17 +402,14 @@ h2 {
 }
 .articals__art {
   width: 376px;
-  height: 162px;
 }
 @media screen and (max-width: 1440px) {
   .articals__art {
     width: 224px;
-    height: 162px;
   }
 }
 .articals__page {
   width: 356px;
-  height: 18px;
   margin: 10px;
   color: #727272;
   font-size: 12px;
@@ -420,14 +417,12 @@ h2 {
 @media screen and (max-width: 1440px) {
   .articals__page {
     width: 204px;
-    height: 12px;
     font-size: 8px;
   }
 }
 .articals__title {
   color: #414141;
   width: 356px;
-  height: 54px;
   font-weight: 700;
   font-size: 18px;
   margin: 10px;
@@ -435,14 +430,13 @@ h2 {
 @media screen and (max-width: 1440px) {
   .articals__title {
     width: 204px;
-    height: 72px;
     font-size: 16px;
   }
 }
 .articals__description {
   font-family: Rubik;
   width: 356px;
-  height: 92px;
+  height: 96px;
   font-weight: 300;
   line-height: 24px;
   font-size: 15px;
@@ -469,6 +463,24 @@ h2 {
   color: #fff;
   background-color: #70c05b;
 }
+.articals__desbut {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1440px) {
+  .articals__desbut {
+    justify-content: space-between;
+    height: 200px;
+  }
+}
+.articals__btn {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .articals__btn {
+    margin-top: 68px;
+  }
+}
 
 footer {
   background-color: #f9f4e2;
@@ -490,14 +502,21 @@ footer {
 }
 @media screen and (max-width: 1440px) {
   .footer__nav {
-    width: 736px;
-    height: 56px;
-    margin: 32px 16px 36px;
+    display: grid;
+    grid-template-columns: 64px 311px 56px 152px;
+    width: 768px;
+    height: 124px;
   }
 }
 .footer__logo {
   width: 64px;
   height: 44px;
+}
+@media screen and (max-width: 1440px) {
+  .footer__logo {
+    width: 64px;
+    height: 24px;
+  }
 }
 .footer__a {
   text-decoration: none;
